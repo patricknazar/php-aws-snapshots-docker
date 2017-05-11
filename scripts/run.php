@@ -2,7 +2,7 @@
 require_once('snapshots.php');
 require_once('functions.php');
 
-$env = getEnv();
+$env = getOurEnv();
 $volumes = $env['volumes'];
 
 // prepare for aws calls
