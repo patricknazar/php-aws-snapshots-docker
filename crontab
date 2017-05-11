@@ -1,0 +1,1 @@
+30	8	* * * /usr/bin/php /scripts/run.php

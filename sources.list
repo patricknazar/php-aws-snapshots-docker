@@ -1,0 +1,7 @@
+deb http://ap-southeast-2.ec2.archive.ubuntu.com/ubuntu/ trusty main restricted
+deb http://ap-southeast-2.ec2.archive.ubuntu.com/ubuntu/ trusty-updates main restricted
+deb http://ap-southeast-2.ec2.archive.ubuntu.com/ubuntu/ trusty universe
+deb http://ap-southeast-2.ec2.archive.ubuntu.com/ubuntu/ trusty multiverse
+deb http://ap-southeast-2.ec2.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu trusty-security main
+deb http://security.ubuntu.com/ubuntu trusty-security universe

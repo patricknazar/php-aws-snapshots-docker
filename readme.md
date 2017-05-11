@@ -2,6 +2,12 @@ Create automatic AWS EC2 snapshots with limits on the total number of snapshots 
 
 For example, you could create a snapshot every day and only keep the last 7 for a running week's worth of snapshots. Or create a snapshot once a week and only keep the last 4 so you would have a running month's worth of snapshots.
 
+## Docker use
+
+You must specify environment variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION` and at least one `VOL_{aws-volume-id}=snapshots,interval,description`
+
+- `docker build -t boylen/php-aws-snapshots .`
+- `docker run -e VOL_vol-123af85a="7,1 day,dev server backup" -e VOL_vol-123af85a="4,1 week,image server" boylen/php-aws-snapshots`
 
 ## Requirements
 - [AWS CLI](http://aws.amazon.com/cli/)
