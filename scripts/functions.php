@@ -29,7 +29,11 @@ function parseEnv() {
 				$volid = $matches[1];
 				echo "Reading volume '$volid': \n";
 				var_dump($parts);
-				$volumes[$volid] = $parts;
+				$volumes[$volid] = array(
+					'snapshots' => $parts[0],
+					'interval' => $parts[1],
+					'description' => $parts[2]
+					);
 			}
 		}
 	}

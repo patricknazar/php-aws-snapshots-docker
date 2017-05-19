@@ -5,6 +5,8 @@ COPY sources.list /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y --no-install-recommends curl python-pip php5-cli
 RUN pip install --upgrade --user awscli
+RUN ln -s /root/.local/bin/aws /usr/local/bin/aws
+RUN chmod +x /usr/local/bin/aws
 
 # copy scripts
 RUN mkdir /scripts
