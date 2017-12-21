@@ -1,1 +1,1 @@
-30	8	* * * root /usr/bin/php /scripts/run.php
+00	23	* * * root /usr/bin/php /scripts/run.php
